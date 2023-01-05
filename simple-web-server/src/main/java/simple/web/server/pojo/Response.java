@@ -23,9 +23,9 @@ public class Response {
         return new Response(0, message, data);
     }
 
-//    public static Response error(int code, String message) {
-//        return new Response(code, message, null);
-//    }
+    public static Response error(int code, String message) {
+        return new Response(code, message, null);
+    }
 
     public int getCode() {
         return code;
