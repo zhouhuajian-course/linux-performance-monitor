@@ -6,12 +6,21 @@
 
 + htop
 
-+ [nmon](nmon.md)
++ iostat + watch
+
++ [dstat](/dstat/dstat.md)
+
++ [nmon](/nmon/nmon.md)
+
++ [Grafana + Prometheus + NodeExporter](https://github.com/zhouhuajian-course/linux-monitor-platform)
 
 ## 接口
 
 + http://192.168.1.103:8080/user/login?user=zhouhuajian&pwd=123456  
   {"code":0,"message":"登录成功","data":null}
+
++ http://localhost:8080/account/transfer?to=2&amount=100.00  
+  {"code":0,"message":"转账成功","data":{"uid":1,"amount":100.0,"to":2}}
 
 ## 备注
 
@@ -26,4 +35,14 @@
   #sampleresult.default.encoding=ISO-8859-1
   sampleresult.default.encoding=UTF-8
   ```
+  
++ if occur `org.springframework.boot:spring-boot-gradle-plugin:3.0.1`  
+  把build.gradle的plugins修改下  
+  // id 'org.springframework.boot' version '3.0.1'  
+  id 'org.springframework.boot' version '2.4.5'  
+  https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-gradle-plugin
+
++  如果编译时出现版本错误  
+   Compiler -> Java Compiler -> Project bytecode version 修改下  
+  ![java_compiler_project_bytecode_version.png](readme/java_compiler_project_bytecode_version.png)
 
