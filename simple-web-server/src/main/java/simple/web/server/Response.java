@@ -1,4 +1,4 @@
-package simple.web.server.pojo;
+package simple.web.server;
 
 import org.springframework.stereotype.Component;
 

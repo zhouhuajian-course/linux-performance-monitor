@@ -46,3 +46,15 @@
    Compiler -> Java Compiler -> Project bytecode version 修改下  
   ![java_compiler_project_bytecode_version.png](readme/java_compiler_project_bytecode_version.png)
 
++ 如果出现中文乱码  
+  Settings -> Editor -> File Encodings -> Project Encoding  
+  改为UTF-8
+
++ gradle compileJava 乱码  
+  错误: 编码 GBK 的不可映射字符
+  https://docs.gradle.org/current/dsl/org.gradle.api.tasks.compile.CompileOptions.html#org.gradle.api.tasks.compile.CompileOptions:encoding  
+  ```
+  tasks.withType(JavaCompile) {  
+      options.encoding = 'UTF-8'
+  }
+  ```

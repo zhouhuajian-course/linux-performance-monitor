@@ -1,4 +1,4 @@
-package simple.web.server.service;
+package simple.web.server;
 
 import org.springframework.stereotype.Service;
 
