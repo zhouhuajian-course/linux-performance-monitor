@@ -14,6 +14,8 @@
 
 + [Grafana + Prometheus + NodeExporter](https://github.com/zhouhuajian-course/linux-monitor-platform)
 
++ [SkyWalking](/skywalking/skywalking.md) 
+
 ## 接口
 
 + http://192.168.1.103:8080/user/login?user=zhouhuajian&pwd=123456  

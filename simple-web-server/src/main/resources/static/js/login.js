@@ -1,0 +1,1 @@
+window.document.write("Welcome to the login page!");
